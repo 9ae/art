@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 
-// Project site served at https://9ae.github.io/art/
+// Served from the custom domain root (configured in GitHub Pages)
 export default defineConfig({
-  site: 'https://9ae.github.io',
-  base: '/art',
+  site: 'https://aidianlin.com',
 });
