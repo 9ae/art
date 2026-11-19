@@ -1,0 +1,31 @@
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 24px;
+  padding: 32px var(--page-gutter);
+  border-top: var(--border);
+  font-weight: 700;
+}
+
+.footer-link,
+.footer-icon-link {
+  color: var(--color-ink);
+}
+
+.footer-link:hover,
+.footer-icon-link:hover,
+.footer-link:focus-visible,
+.footer-icon-link:focus-visible {
+  color: var(--color-accent);
+}
+
+.footer-icon-link {
+  display: inline-flex;
+}
+
+.footer-icon-link svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}

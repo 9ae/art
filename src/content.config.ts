@@ -22,6 +22,8 @@ const blocks = defineCollection({
       heading: z.string().optional(),
       portrait: image().optional(),
       portraitAlt: z.string().optional(),
+      email: z.string().email().optional(),
+      instagram: z.string().optional(), // username, without the @
     }),
 });
 
