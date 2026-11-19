@@ -1,8 +1,7 @@
 ---
 heading: About Me
-# Add a portrait by dropping a file in src/assets/images and uncommenting:
-# portrait: ../../assets/images/aidian-lin-portrait.jpg
-# portraitAlt: Portrait of Aidian Lin
+portrait: ../../assets/images/aidian-lin-portrait.jpeg
+portraitAlt: Portrait of Aidian Lin
 ---
 
 I create graphic novel zines—stories that make the familiar feel strange. My work explores isolation, wanting something just out of reach, and living with a blurry memory, unable to tell what is real or imaginary.
