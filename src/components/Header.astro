@@ -1,0 +1,16 @@
+---
+import '../styles/header.css';
+
+const siteName = 'AIDIAN LIN';
+const links = [
+  { label: 'Stories', href: '#stories' },
+  { label: 'About Me', href: '#about' },
+];
+---
+
+<header class="site-header">
+  <span class="logo">{siteName}</span>
+  <nav class="site-nav" aria-label="Main">
+    {links.map((link) => <a href={link.href}>{link.label}</a>)}
+  </nav>
+</header>

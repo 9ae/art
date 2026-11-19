@@ -1,0 +1,43 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 32px;
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 24px 96px;
+  text-align: left;
+}
+
+.about-portrait,
+.about-portrait-placeholder {
+  flex: none;
+  width: 160px;
+  border-radius: var(--radius);
+}
+
+.about-portrait {
+  height: auto;
+  border: var(--border);
+}
+
+.about-portrait-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  background: color-mix(in srgb, var(--color-accent-2) 35%, transparent);
+  font-size: 0.875rem;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 240px;
+}
+
+@media (max-width: 520px) {
+  .about-portrait,
+  .about-portrait-placeholder {
+    margin: 0 auto;
+  }
+}

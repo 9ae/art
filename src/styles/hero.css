@@ -1,0 +1,18 @@
+.hero {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 48px 24px 8px;
+  text-align: center;
+}
+
+.hero-tagline {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: var(--text-tagline);
+  line-height: 1.25;
+  transform: rotate(var(--tilt-tagline));
+}
+
+.hero-tagline p {
+  margin: 0;
+}

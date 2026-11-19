@@ -1,0 +1,11 @@
+---
+import { getEntry, render } from 'astro:content';
+import '../styles/hero.css';
+
+const entry = await getEntry('blocks', 'hero');
+const { Content } = await render(entry!);
+---
+
+<section class="hero">
+  <div class="hero-tagline"><Content /></div>
+</section>

@@ -1,0 +1,45 @@
+/* Theme: edit these values to restyle the whole site. */
+:root {
+  /* Colors */
+  --color-bg: #e8eddd;
+  --color-ink: #1b1b1b;
+  --color-muted: #4a4540;
+  --color-accent: #6b2d5c;
+  --color-accent-2: #9cc5a1;
+  --color-card: #ffffff;
+
+  /* Typography */
+  --font-display: 'Chewy', sans-serif;
+  --font-body: 'Quicksand', sans-serif;
+  --text-body: 1.125rem;
+  --text-small: 1rem;
+  --text-logo: 1.25rem;
+  --text-tagline: clamp(1.6rem, 5vw, 2.375rem);
+  --text-heading: clamp(1.9rem, 6vw, 2.5rem);
+  --text-card-title: 1.5rem;
+  --letter-spacing-logo: 0.06em;
+
+  /* Layout */
+  --content-width: 760px;
+  --page-gutter: clamp(16px, 4vw, 40px);
+  --section-gap: clamp(48px, 8vw, 96px);
+  --grid-gap-row: 64px;
+  --grid-gap-column: 48px;
+  --card-min-width: 280px;
+
+  /* Borders, shadows, shapes */
+  --border-width: 3px;
+  --border: var(--border-width) solid var(--color-ink);
+  --radius: 4px;
+  --shadow-offset: 8px;
+  --shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-ink);
+
+  /* Playful tilts */
+  --tilt-tagline: -1.5deg;
+  --tilt-heading: -2deg;
+  --tilt-card-1: -2.5deg;
+  --tilt-card-2: 2deg;
+  --tilt-card-3: 1.5deg;
+  --tilt-card-4: -2deg;
+  --tilt-tape: 4deg;
+}
