@@ -11,7 +11,7 @@
 
 .footer-link,
 .footer-icon-link {
-  color: var(--color-ink);
+  color: var(--color-accent);
 }
 
 .footer-link:hover,
