@@ -1,0 +1,18 @@
+---
+import { Image } from 'astro:assets';
+import foxHare from '../assets/images/fox-hare.png';
+import '../styles/illustration.css';
+---
+
+<section id="illustration" class="section">
+  <h2 class="section-heading">Illustration</h2>
+  <figure class="illustration">
+    <Image
+      class="illustration-image"
+      src={foxHare}
+      alt="Illustration of a fox and a hare"
+      widths={[480, 800, 1200]}
+      sizes="(max-width: 840px) 90vw, 800px"
+    />
+  </figure>
+</section>

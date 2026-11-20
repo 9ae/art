@@ -1,0 +1,13 @@
+.illustration {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.illustration-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: var(--border);
+  border-radius: var(--radius);
+}
