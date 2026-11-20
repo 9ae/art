@@ -24,6 +24,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  color: var(--color-accent);
+}
+
 .section {
   text-align: center;
   scroll-margin-top: 1rem;
