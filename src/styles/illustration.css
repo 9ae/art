@@ -13,16 +13,16 @@
 
 .illustration-images {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
 /* Some artwork has an opaque white background; multiply lets the page color show through. */
 .illustration-image {
   display: block;
-  flex: 1 1 0;
+  flex: 0 0 calc((100% - 32px) / 3);
   min-width: 0;
-  width: 100%;
+  width: calc((100% - 32px) / 3);
   height: auto;
   mix-blend-mode: multiply;
 }
@@ -44,8 +44,20 @@
   color: var(--color-muted);
 }
 
+.illustration-image:only-child {
+  flex-basis: 100%;
+  width: 100%;
+}
+
 @media (max-width: 640px) {
   .illustration-images {
     flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .illustration-image,
+  .illustration-image:only-child {
+    flex: none;
+    width: 100%;
   }
 }

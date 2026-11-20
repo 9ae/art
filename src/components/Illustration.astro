@@ -26,7 +26,7 @@ const illustrations = await Promise.all(
                 src={img.src}
                 alt={img.alt}
                 widths={[480, 800, 1200]}
-                sizes={`(max-width: 640px) 90vw, ${Math.round(760 / item.images.length)}px`}
+                sizes={`(max-width: 640px) 90vw, ${item.images.length > 1 ? 250 : 760}px`}
               />
             ))}
           </div>
