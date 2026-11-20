@@ -1,11 +1,11 @@
 ---
-title: Hands
-order: 2
+title: Reaching for your hands
+order: 1
 images:
   - src: ../../assets/images/hands_1.png
     alt: Two hands, one warm-toned and one cool-toned, reaching to clasp each other
   - src: ../../assets/images/hands_2.png
-    alt: Hands series, second drawing
+    alt: Hands holdind a ghost
   - src: ../../assets/images/hands_3.png
     alt: Hands series, third drawing
   - src: ../../assets/images/hands_4.png
@@ -14,4 +14,6 @@ images:
     alt: Hands series, fifth drawing
 ---
 
-A series of five drawings of hands.
+Out of habit we reach for those who are gone, when the realization hits...
+
+*Media: Color pencils on toned paper*
