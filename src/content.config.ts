@@ -14,6 +14,19 @@ const stories = defineCollection({
     }),
 });
 
+// One markdown file per illustration. The body is the description shown below the image.
+// Illustrations are sorted by `order`.
+const illustrations = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/illustrations' }),
+  schema: ({ image }) =>
+    z.object({
+      title: z.string(),
+      order: z.number(),
+      image: image(),
+      alt: z.string(),
+    }),
+});
+
 // Free-form page sections (hero tagline, about me). The body is the copy.
 const blocks = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/blocks' }),
@@ -27,4 +40,4 @@ const blocks = defineCollection({
     }),
 });
 
-export const collections = { stories, blocks };
+export const collections = { stories, illustrations, blocks };
