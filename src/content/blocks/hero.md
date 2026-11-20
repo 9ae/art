@@ -1,4 +1,4 @@
 ---
 ---
 
-I create visual narratives about longing and lost in a lonely world.
+Visual stories about longing and letting go in a lonely world.
