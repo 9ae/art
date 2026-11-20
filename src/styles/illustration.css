@@ -11,9 +11,17 @@
   margin: 0;
 }
 
+.illustration-images {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
 /* Some artwork has an opaque white background; multiply lets the page color show through. */
 .illustration-image {
   display: block;
+  flex: 1 1 0;
+  min-width: 0;
   width: 100%;
   height: auto;
   mix-blend-mode: multiply;
@@ -34,4 +42,10 @@
 .illustration-caption .prose {
   font-size: var(--text-small);
   color: var(--color-muted);
+}
+
+@media (max-width: 640px) {
+  .illustration-images {
+    flex-direction: column;
+  }
 }

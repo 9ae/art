@@ -14,7 +14,8 @@ const stories = defineCollection({
     }),
 });
 
-// One markdown file per illustration. The body is the description shown below the image.
+// One markdown file per illustration. `images` holds one or more images (grouped side by side
+// on desktop, stacked on mobile). The body is the description shown below them.
 // Illustrations are sorted by `order`.
 const illustrations = defineCollection({
   loader: glob({ pattern: '*.md', base: './src/content/illustrations' }),
@@ -22,8 +23,7 @@ const illustrations = defineCollection({
     z.object({
       title: z.string(),
       order: z.number(),
-      image: image(),
-      alt: z.string(),
+      images: z.array(z.object({ src: image(), alt: z.string() })).min(1),
     }),
 });
 
